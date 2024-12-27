@@ -1,10 +1,12 @@
 {
 	"type": "module",
 	"scripts": {
+		"build": "pnpm run --if-present -r build",
+		"fmt": "prettier --cache --write .",
 		"pull": "node ./scripts/pull-lexicons.js",
 		"pull:bluemoji": "node ./scripts/pull-bluemoji-lexicons.js",
 		"pull:whtwnd": "node ./scripts/pull-whtwnd-lexicons.js",
-		"fmt": "prettier --cache --write ."
+		"test": "pnpm run --if-present -r test"
 	},
 	"devDependencies": {
 		"@mary/tar": "npm:@jsr/mary__tar@^0.2.4",
