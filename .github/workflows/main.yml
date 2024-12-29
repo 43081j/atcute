@@ -24,6 +24,6 @@ jobs:
         uses: pnpm/action-setup@v4
         run_install: false
       - name: Install
-        run: pnpm i
+        run: pnpm install
       - name: Build
-        run: pnpm run -r build
+        run: pnpm run --recursive build
